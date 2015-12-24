@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+    </head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#aboutme">Обо мне</a>
+            </li>
+            <li>
+                <a href="#pleers">Плееры</a>
+            </li>
+            <li>
+                <a href="#comments">Комментарии</a>
+            </li>
+            <li>
+                <a href="#footi">Футер</a>
+            </li>
+        </ul>
+    </div>
+    <div class="header"></div>
+    <div class="timer">
+        <h2>Время до старта:</h2>
+        <script src="http://megatimer.ru/s/ff240bdf4fc019d92c3a7cb5d0e4fe83.js"></script>
+    </div>
+    <ul class="social">
+        <li>
+            <a href="http://vk.com/deadpoolystream" target="_blank"><img src="pics/vk.png"/></a>
+        </li>
+        <li>
+            <a href="https://twitter.com/Deadpooly" target="_blank"><img src="pics/t.png"/></a>
+        </li>
+        <li>
+            <a href="http://www.youtube.com/channel/UCvCePBWs0XyHPoX_rcXgsiA/featured" target="_blank"><img src="pics/you.png"/></a>
+        </li>
+        <li>
+            <a href="http://sc2tv.ru/channel/deadpool" target="_blank"><img src="pics/sc2tv.png"/></a>
+        </li>
+    </ul>
+    <div class="players">
+        <a id="pleers"></a>
+        <div class="menu1">
+            <br id="tab2"/>
+            <br id="tab3"/>
+            <a href="#tab1" class="tab1"><img src="pics/ticon.png"/></a>
+            <a href="#tab2" class="tab2"><img src="pics/ggicon.png"/></a>
+            <div class="player-2">
+                <iframe src="http://player.twitch.tv/?channel=deadpooly"
+                        class="layer1" frameborder="0" scrolling="no" height="378" width="620">
+                </iframe>
+                <iframe src="http://www.twitch.tv/deadpooly/chat?popout="
+                        class="layer2" frameborder="0" scrolling="no" height="378" width="350">
+                </iframe>
+            </div>
+            <div class="player-1">
+                <iframe src="http://goodgame.ru/nocache/ggplayer/ggplayer.html?1708"
+                        class="layer1" frameborder="0"scrolling="no" height="378" width="620" allowfullscreen>
+                </iframe>
+                <iframe src="http://goodgame.ru/chat/DeadpoOly/"
+                        class="layer2" frameborder="0" scrolling="no" height="378" width="350"></iframe>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="about"><p><a id="aboutme"></a></p>
+        <h2><br>Всем привет!
+            <br>Меня зовут Пулли aka Бассейн!
+            <br>Здесь вы можете следить за моими стримами, делиться впечатлениями и эмоциями!
+            <br>Не стесняйтесь!</h2>
+    </div>
+
+    <div class="comments"><a id="comments"></a>
+        <div id="vk_comments"></div>
+        <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+    <script defer type="text/javascript">
+        VK.init({apiId: 5198756, onlyWidgets: true});
+    </script>
+        <script defer type="text/javascript">
+            VK.Widgets.Comments("vk_comments", {limit: 10, width: "665", attach: "*"});
+        </script>
+    </div>
+    <div id="axis">
+        <div class="img object van move-left"></div>
+        </div>
+    <div class="footer">
+        <a id="footi">Сделано с любовью, для зрителей, во всем винить Yudzy</a>
+    </div>
+</body>
+</html>
